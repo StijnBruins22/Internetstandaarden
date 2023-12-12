@@ -1,0 +1,80 @@
+body {
+    background: #fafaf9
+    
+
+}
+
+body {
+    font-family: Futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+p {
+    font-weight: 75;
+}
+
+h1 {
+    text-align: center; /* Optioneel: Centreer de tekst */
+  }
+  
+  .word1 {
+    color: #DA1919; /* Kleur voor het eerste woord */
+  }
+  
+  .word2 {
+    color: #F8F8FF; /* Kleur voor het tweede woord */
+  }
+
+header {
+    background-color: #150101;
+    padding: 25px 15px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    position: relative; /* Maak de positie relatief om het ::after-element te positioneren */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #F8F8FF;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.5s ease; /* Overgang van kleur over 0.5 seconden */
+  }
+  
+  nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #DA1919; /* Kleur van het streepje */
+    transition: width 0.3s ease; /* Overgang van breedte over 0.3 seconden */
+  }
+  
+  nav ul li a:hover {
+    color: #DA1919; /* Nieuwe kleur bij hover */
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%; /* Streepje wordt zichtbaar bij hover */
+  }
+
+  .navigation-container {
+    text-align: center; /* Centreer de knoppen */
+  }
