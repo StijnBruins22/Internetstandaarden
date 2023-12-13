@@ -1,24 +1,28 @@
 body {
-    background: #fafaf9
-    
-
+    background: #F5F5F5
 }
 
 body {
-    font-family: Futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
 }
 
 p {
     font-weight: 75;
 }
 
+/* Header codes */
+
 h1 {
     text-align: center; /* Optioneel: Centreer de tekst */
   }
   
   .word1 {
-    color: #DA1919; /* Kleur voor het eerste woord */
+    color: #F8F8FF ; /* Kleur voor het eerste woord */
   }
   
   .word2 {
@@ -26,7 +30,7 @@ h1 {
   }
 
 header {
-    background-color: #150101;
+    background-color: #e60000;
     padding: 25px 15px;
     margin-top: -10px;
     margin-left: -10px;
@@ -63,12 +67,12 @@ header {
     display: block;
     width: 0;
     height: 2px;
-    background-color: #DA1919; /* Kleur van het streepje */
+    background-color: #000000; /* Kleur van het streepje */
     transition: width 0.3s ease; /* Overgang van breedte over 0.3 seconden */
   }
   
   nav ul li a:hover {
-    color: #DA1919; /* Nieuwe kleur bij hover */
+    color: #000000; /* Nieuwe kleur bij hover */
   }
   
   nav ul li a:hover::after {
@@ -78,3 +82,137 @@ header {
   .navigation-container {
     text-align: center; /* Centreer de knoppen */
   }
+
+/* Footerstijlen */
+
+.footer {
+  background-color: #CCCCCC; /* Grijze achtergrondkleur */
+  padding: 20px 0; /* Verticale padding aanpassen naar wens */
+  color: #333; /* Tekstkleur aanpassen voor contrast */
+  text-align: center; /* Center de tekst binnen de footer */
+  margin-top: auto;
+ 
+}
+
+.container {
+  max-width: 1200px; /* Maximale breedte van de container aanpassen naar wens */
+  margin: 0 auto; /* Center de inhoud van de footer */
+}
+
+.container p {
+  margin: 0; /* Reset standaardmarges van de alinea */
+}
+
+/* Over de club */
+
+.foto1-container {
+  position: relative;
+  text-align: center;
+}
+
+.foto1-afbeelding {
+  width: 1250px; /* Stel de gewenste breedte in */
+  height: auto;
+  transition: transform 0.5s ease; /* Voegt een vloeiende overgang toe bij het schalen van de afbeelding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Schaduw toevoegen aan de afbeelding */
+
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Voegt een vloeiende overgang toe bij het tonen van de tekst */
+  text-align: center;
+  color: white;
+}
+
+.foto1-container:hover .foto1-afbeelding {
+  transform: scale(1.1); /* Vergroot de afbeelding met 10% wanneer erover wordt gehoverd */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Vergroot de schaduw wanneer erover wordt gehoverd */
+}
+
+.foto1-container:hover .image-text {
+  opacity: 1; /* Maakt de tekst zichtbaar wanneer erover wordt gehoverd */
+}
+
+.text-background {
+  background-color: rgba(0, 0, 0, 0.7); /* Achtergrondkleur met 70% doorzichtigheid */
+  padding: 10px; /* Ruimte rond de tekst */
+  text-align: center;
+}
+
+/* Historie */
+
+.kopje {
+  text-align: center;
+}
+
+h2 {
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Witte tekst */
+  background-color: rgba(0, 0, 0, 0.7); /* Zwarte achtergrond met opacity */
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3); /* Witte binnenste schaduw */
+  transition: all 0.3s ease;
+}
+
+h2:hover {
+  transform: translateY(-5px); /* Maakt een sprongetje omhoog */
+  background-color: rgba(0, 0, 0, 0.5); /* Lichtere zwarte achtergrond */
+}
+
+h2:active {
+  transform: translateY(5px); /* Gaat naar beneden wanneer actief (geklikt) */
+}
+
+.video-container {
+  text-align: center;
+
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.video-container {
+  text-align: center;
+}
+
+video {
+  animation: zoomInOut 6s ease infinite; /* Animatie toevoegen aan het video-element */
+  border-radius: 8px;
+}
+
+
+
+
+/* Stadion */
+
+
+.image-container {
+  display: flex;
+}
+.image-container img {
+  width: 100%; /* Zorg ervoor dat beide afbeeldingen de volledige breedte van de kolom innemen */
+  height: auto; /* Behoud de aspect ratio van de afbeeldingen */
+}
+.right-bottom {
+  grid-column: 2; /* Plaats de afbeelding in de tweede kolom (rechts) */
+}
+
+
+/* Jeugdopleiding */
