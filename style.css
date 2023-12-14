@@ -103,6 +103,13 @@ header {
   margin: 0; /* Reset standaardmarges van de alinea */
 }
 
+footer {
+  /* Voeg een 1 pixel dikke zwarte rand toe aan de bovenkant van de footer */
+  border-top: 1px solid black;
+  /* Optioneel: voeg ruimte toe tussen de inhoud van de footer en de rand */
+  padding-top: 10px; /* Pas dit aan naar wens */
+}
+
 /* Over de club */
 
 .foto1-container {
@@ -202,17 +209,36 @@ video {
 
 /* Stadion */
 
-
-.image-container {
+.afbeelding-1 {
   display: flex;
-}
-.image-container img {
-  width: 100%; /* Zorg ervoor dat beide afbeeldingen de volledige breedte van de kolom innemen */
-  height: auto; /* Behoud de aspect ratio van de afbeeldingen */
-}
-.right-bottom {
-  grid-column: 2; /* Plaats de afbeelding in de tweede kolom (rechts) */
+  justify-content: space-between;
 }
 
+.afbeelding-1 p {
+  padding: 0px 20px 0px;
+}
+
+.afbeelding-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.afbeelding-2 p {
+  padding: 0px 20px 0px;
+  flex-wrap: wrap;
+}
+
+.afbeelding-met-effecten {
+  border: 2px solid red; /* Dikte, stijl en kleur van de rode rand */
+  display: block; /* Afbeeldingen onder elkaar plaatsen */
+  margin-bottom: 10px; /* Ruimte tussen afbeeldingen */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen aan de afbeeldingen */
+  transition: transform 0.3s ease-in-out; /* Vloeiende overgang voor grootteverandering */
+}
+
+.afbeelding-met-effecten:hover {
+  transform: scale(1.1); /* Afbeelding 10% vergroten bij hover */
+}
 
 /* Jeugdopleiding */
