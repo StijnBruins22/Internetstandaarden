@@ -84,24 +84,17 @@ header {
   color: #333; /* Tekstkleur aanpassen voor contrast */
   text-align: center; /* Center de tekst binnen de footer */
   margin-top: auto;
+    /* Voeg een 1 pixel dikke zwarte rand toe aan de bovenkant van de footer */
+    border-top: 1px solid black;
+    /* Optioneel: voeg ruimte toe tussen de inhoud van de footer en de rand */
+    padding-top: 10px; /* Pas dit aan naar wens */
+    max-width: 2000px; /* Maximale breedte van de container aanpassen naar wens */
+    margin: 0 auto; /* Center de inhoud van de footer */
+    margin: 0; /* Reset standaardmarges van de alinea */
+
  
 }
 
-.container {
-  max-width: 1200px; /* Maximale breedte van de container aanpassen naar wens */
-  margin: 0 auto; /* Center de inhoud van de footer */
-}
-
-.container p {
-  margin: 0; /* Reset standaardmarges van de alinea */
-}
-
-footer {
-  /* Voeg een 1 pixel dikke zwarte rand toe aan de bovenkant van de footer */
-  border-top: 1px solid black;
-  /* Optioneel: voeg ruimte toe tussen de inhoud van de footer en de rand */
-  padding-top: 10px; /* Pas dit aan naar wens */
-}
 
 /* Over de club */
 
@@ -127,6 +120,7 @@ footer {
   transition: opacity 0.3s ease; /* Voegt een vloeiende overgang toe bij het tonen van de tekst */
   text-align: center;
   color: white;
+
 }
 
 .foto1-container:hover .foto1-afbeelding {
@@ -144,9 +138,13 @@ footer {
   text-align: center;
 }
 
+
+
 /* Historie */
 
-.kopje {
+
+
+.kopje-pagina2 {
   text-align: center;
 }
 
@@ -182,7 +180,7 @@ h2:active {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
