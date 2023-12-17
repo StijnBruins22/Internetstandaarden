@@ -1,3 +1,5 @@
+/* Algemeen */
+
 body {
     background: #F5F5F5
 }
@@ -76,6 +78,7 @@ header {
     text-align: center; /* Centreer de knoppen */
   }
 
+
 /* Footerstijlen */
 
 .footer {
@@ -92,7 +95,6 @@ header {
     margin: 0 auto; /* Center de inhoud van de footer */
     margin: 0; /* Reset standaardmarges van de alinea */
 
- 
 }
 
 
@@ -139,10 +141,7 @@ header {
 }
 
 
-
 /* Historie */
-
-
 
 .kopje-pagina2 {
   text-align: center;
@@ -197,8 +196,6 @@ video {
 }
 
 
-
-
 /* Stadion */
 
 .afbeelding-1 {
@@ -240,6 +237,7 @@ video {
   height: 260;
 }
 
+
 /* Jeugdopleiding */
 
 .gallery {
@@ -248,7 +246,6 @@ video {
   align-items: center;
 }
 
-/* Stijlen voor de afbeeldingen */
 .gallery-item {
   margin: 10px 0; /* Ruimte tussen de afbeeldingen */
   position: relative;
