@@ -19,16 +19,9 @@ p {
 
 h1 {
     text-align: center; /* Optioneel: Centreer de tekst */
+    color: #F8F8FF;
   }
   
-  .word1 {
-    color: #F8F8FF ; /* Kleur voor het eerste woord */
-  }
-  
-  .word2 {
-    color: #F8F8FF; /* Kleur voor het tweede woord */
-  }
-
 header {
     background-color: #e60000;
     padding: 25px 15px;
@@ -167,6 +160,7 @@ h2 {
   border-radius: 8px;
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3); /* Witte binnenste schaduw */
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 h2:hover {
@@ -250,9 +244,6 @@ video {
 
 /* Jeugdopleiding */
 
-
-
-
 .gallery {
   display: flex;
   flex-direction: column;
@@ -266,7 +257,7 @@ video {
 }
 
 .gallery-item img {
-  width: 200px; /* Pas de breedte naar wens aan */
+  width: 700px; /* Pas de breedte naar wens aan */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
