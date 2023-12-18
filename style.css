@@ -201,7 +201,7 @@ video {
 .afbeelding-1 {
   display: flex;
   justify-content: space-between;
-  width: 300;
+  width: 165vh;
 }
 
 .afbeelding-1 p {
@@ -212,7 +212,7 @@ video {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  width: 300;
+  width: 165vh;
 }
 
 .afbeelding-2 p {
@@ -233,8 +233,8 @@ video {
 }
 
 #myvideo {
-  width: 540;
-  height: 260;
+  width: 540vh;
+  height: 260vh;
 }
 
 
@@ -249,6 +249,9 @@ video {
 .gallery-item {
   margin: 10px 0; /* Ruimte tussen de afbeeldingen */
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gallery-item img {
